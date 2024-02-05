@@ -1,12 +1,19 @@
 import java.util.Locale;
 import java.util.Scanner;
 
+/**
+<b>Definição da Classe pública App (principal)</b>
+<p>Dependências:</p>
+<ul>
+    <li>ContaTerminal</li>
+</ul>
+*/
 public class App {
     static Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
     /**
-    * <b>Método da classe App</b>
-    * <p>Define o número da conta bancária.</p>
+    * <b>Método público da classe App sem retorno com parâmetro</b>
+    * <p>Define o número da conta bancária da conta.</p>
     */
     public static void informeNumero(ContaTerminal conta) {
 
@@ -16,8 +23,8 @@ public class App {
     }
 
     /**
-    * <b>Método da classe App</b>
-    * <p>Define o número da agência.</p>
+    * <b>Método público da classe App sem retorno com parâmetro</b>
+    * <p>Define o número da agência da conta.</p>
     */
     public static void informeAgencia(ContaTerminal conta) {
 
@@ -28,8 +35,8 @@ public class App {
     }
 
     /**
-    * <b>Método da classe App</b>
-    * <p>Define o nome do cliente.</p>
+    * <b>Método público da classe App sem retorno com parâmetro</b>
+    * <p>Define o nome do cliente da conta.</p>
     */
     public static void informeNomeCliente(ContaTerminal conta) {
 
@@ -40,8 +47,8 @@ public class App {
     }
 
     /**
-    * <b>Método da classe App</b>
-    * <p>Define o saldo da conta bancária.</p>
+    * <b>Método público da classe App sem retorno com parâmetro</b>
+    * <p>Define o saldo da conta bancária da conta.</p>
     */
     public static void informeSaldo(ContaTerminal conta) {
 
@@ -52,7 +59,7 @@ public class App {
     }
 
     /**
-    * <b>Método da classe App</b>
+    * <b>Método público da classe App sem retorno com parâmetro</b>
     * <p>Define os atributos do objeto: contaTerminal.</p>
     */
     public static void cadastrarContaBancaria(ContaTerminal contaTerminal) {
@@ -63,7 +70,7 @@ public class App {
     }
     
     /**
-    * <b>Método da classe App</b>
+    * <b>Método público da classe App sem retorno com parâmetro</b>
     * <p>Exibe o nome do cliente, o número da conta, o número da conta bancária e o valor do saldo.</p>
     */
     public static void exibirInformacoesCliente(ContaTerminal conta){
@@ -74,7 +81,11 @@ public class App {
         conta.saldo
         );
     }
-
+    
+    /**
+    * <b>Método público da classe App (principal) com parâmetro</b>
+    * <p>Exibe o nome do cliente, o número da conta, o número da conta bancária e o valor do saldo.</p>
+    */
     public static void main(String[] args) throws Exception {
         ContaTerminal contaBancaria = new ContaTerminal();
         cadastrarContaBancaria(contaBancaria);

@@ -1,3 +1,10 @@
+/**
+<b>Classe pública ContaTerminal</b>
+<p>Depende dela:</p>
+<ul>
+    <li>App</li>
+</ul>
+*/
 public class ContaTerminal {
     /**
     * <b>Atributo</b>
@@ -22,8 +29,4 @@ public class ContaTerminal {
     * <p>Saldo da conta bancária do cliente.</p>
     */
     Double saldo;
-    
-
-
-
 }
