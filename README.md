@@ -1,2 +1,2 @@
 # Java Desafios DIO
-Desafio para a simulação de uma conta bancária através do terminal/console.
+Lista de desafios em Java.
